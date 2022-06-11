@@ -1,0 +1,1671 @@
+@import "./grid.css";
+@import "./general.css";
+@import url("https://use.typekit.net/qgn4wzj.css");
+
+#landingPage nav {
+  background-color: var(--dickson-light-blue);
+}
+#landingPage header .row {
+  position: relative;
+}
+#landingPage .landingHeader {
+  display: flex;
+  flex-direction: column;
+}
+#landingPage .container {
+  position: relative;
+}
+#landingPage .header__img {
+  max-width: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+#landingPage .header__img + .bg-accessories {
+  right: 15px;
+  bottom: 50%;
+  transform: translateY(25%);
+}
+#landingPage .header__info {
+  margin-top: 50px;
+  position: relative;
+}
+#landingPage .header__company-name {
+  position: absolute;
+  font-weight: bold;
+  color: #7887A5;
+  right: 18px;
+  transform: translateY(calc(-200% - 60px)) rotate(-11.309deg);
+}
+#landingPage .header__slogan {
+  margin-bottom: 30px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  color: #113F59;
+}
+#landingPage .header__description {
+  color: #707070;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+}
+#landingPage .header__arrow {
+  position: absolute;
+  display: none;
+  right: 5%;
+  transform: translateY(50%);
+}
+#landingPage .slick-dots li:not(.slick-active) button:before {
+  opacity: 0.13;
+}
+#landingPage .slick-list {
+  overflow: visible;
+}
+#landingPage main .row .slide-arrow {
+  bottom: -15px;
+  transform: translateY(100%);
+}
+#landingPage .getFree__img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+#landingPage .getFree__caption {
+  color: #fff;
+  padding: 30px;
+  background: linear-gradient(to bottom, #2553b0, var(--dickson-blue) 40%);
+  border-radius: 0 0 20px 20px;
+}
+#landingPage .getFree__heading {
+  font-family: 'Gotham-bold';
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#landingPage .getFree__subheading {
+  font-family: 'Gotham-normal';
+  font-size: 15px;
+}
+#landingPage .getFree_desc {
+  display: flex;
+  flex-direction: column;
+  color: #707070;
+}
+#landingPage .getFree__btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  background-color: var(--dickson-orange);
+  width: 30px;
+}
+#landingPage .getFree__btn {
+  font-weight: bold;
+  padding: 0 10px 0 45px;
+  margin: 25px auto;
+  position: relative;
+  color: var(--dickson-orange);
+}
+#landingPage .benefit .col-12:nth-child(odd) .benefit__detail::before {
+  top: -160px;
+  transform: skewY(-15deg) translateX(calc(-50% - 27px)) translateY(0px);
+}
+#landingPage .benefit .col-12:nth-child(even) .benefit__detail::before {
+  transform: skewY(15deg) translateX(calc(-50% - 30px)) translateY(-15px);
+}
+#landingPage .benefit .row .col-12:not(:first-child) {
+  margin-top: 80px; /*dimulai dari 30px*/
+}
+#landingPage .benefit__img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+}
+#landingPage .benefit .col-12:nth-child(even) .benefit__detail::before {
+  top: -105px;
+}
+#landingPage .benefit__detail::before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 110px;
+  z-index: -1;
+  left: 50%;
+  background-color: var(--dickson-yellow);
+  border-radius: 20px;
+}
+#landingPage .benefit__detail {
+  margin-top: 40px;
+  position: relative;
+}
+#landingPage .benefit__title {
+  color: var(--dickson-blue);
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.85px;
+  font-family: 'Gotham-bold';
+  margin-bottom: 20px;
+}
+#landingPage .benefit__desc {
+  text-align: center;
+  font-size: 14px;
+  color: #7D7D7D;
+}
+#landingPage footer {
+  margin-top: 40px;
+}
+
+#careerPage #modal-resume-done, #careerPage #modal-applicant-done {
+  opacity: 1;
+  visibility: visible;
+}
+#careerPage nav, #productPage nav {
+  margin-bottom: 0;
+}
+#careerPage header .container, #careerPage header .row, #productPage header .row, #productPage header .container {
+  height: 100%;
+}
+#careerPage header > .container, #productPage header > .container {
+  overflow: hidden;
+  padding: 0;
+}
+#careerPage header .row, #productPage header .row {
+  position: relative;
+}
+#careerPage .careerHeader__caption, #productPage .careerHeader__caption, #productPage .productHeader__caption {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 80%;
+  max-width: 300px;
+  padding: 25px 15px;
+  transform: translateY(-50%);
+}
+#careerPage .careerHeader__btn, #productPage .careerHeader__btn {
+  margin: 0 auto;
+}
+#careerPage .careerHeader__img, #productPage .careerHeader__img {
+  max-width: 100%;
+  object-fit: cover;
+}
+#careerPage .jobs__action .btn-primary {
+  box-shadow: none;
+}
+#careerPage .careerDescription__value {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#careerPage .careerDescription__img {
+  max-height: 730px;
+  object-fit: cover;
+  margin-bottom: 35px;
+}
+#careerPage .careerDescription__heading {
+  order: -1;
+}
+#careerPage .careerDescription__detail {
+  color: var(--dickson-dark-grey);
+}
+#careerPage .team__img {
+  position: relative;
+}
+#careerPage .team__img .bg-accessories {
+  bottom: -10px;
+  width: 230px;
+  height: 185px;
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+#careerPage .team__img img {
+  width: 100%;
+}
+#careerPage details {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+#careerPage details[open] {
+  padding: 30px 30px 40px;
+}
+#careerPage details > summary {
+  display: flex;
+  flex-direction: column;
+}
+#careerPage details[open] summary {
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+}
+#careerPage details .jobs__title {
+  color: var(--dickson-blue);
+  font-weight: bold;
+  letter-spacing: 0.35px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#careerPage .jobs__desc p:first-child {
+  color: #252525;
+}
+#careerPage .jobs__desc p:last-child {
+  color: #3D3D3D;
+}
+#careerPage details .jobs__address {
+  color: #707070;
+  font-style: normal;
+}
+#careerPage details summary small {
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+#careerPage details summary small b, #careerPage details summary small .bx {
+  color: var(--dickson-orange);
+}
+#careerPage details summary small .bx {
+  transition: all 150ms;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5px;
+}
+#careerPage details[open] summary small .bx {
+  transform: rotate(180deg);
+}
+#careerPage details .jobs__desc {
+  margin-bottom: 25px;
+}
+#careerPage .jobs__detail li {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+#careerPage .jobs__detail li::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  border-radius: 50%;
+  height: 5px;
+  background-color: #2D9CDB;
+}
+#careerPage .jobs__action {
+  display: flex;
+  margin-top: 50px;
+  border-top: 1px solid #EAEAEA;
+  justify-content: center;
+  padding-top: 41px;
+}
+#careerPage .jobs__btn {
+  padding: 0 40px;
+  box-shadow: 0px 20px 20px rgba(236, 151, 0, 0.19);
+  background: var(--dickson-orange);
+}
+#careerPage .jobs__btn::before {
+  background: #d98c03;
+}
+#careerPage header, #productPage header {
+  position: relative;
+  overflow: hidden;
+  height: calc(60vh + 95px);
+}
+#careerPage header > .container, #productPage header > .container {
+  position: relative;
+}
+.form__removeValue {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: translateY(5px);
+  font-size: 24px;
+  color: #df5757;
+}
+
+#singleCareerPage header {
+  width: 100%;
+  height: calc(50vh + 125px);
+  background-color: var(--dickson-light-blue);
+  background-image: url('../img/vector.svg'), url('../img/vector.svg');
+  background-position: left top 90px, right bottom -30%;
+  background-size: 200px 350px, 150px 200px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#singleCareerPage main {
+  background-color: rgba(249, 249, 249, 0.61);
+}
+#singleCareerPage .header__location {
+  color: #7887A5;
+  font-weight: bold;
+}
+#singleCareerPage .formSubmit__heading {
+  color: var(--dickson-blue);
+  margin-bottom: 10px;
+}
+#singleCareerPage .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#singleCareerPage .form__row:nth-of-type(2) {
+  padding-top: 30px;
+}
+#singleCareerPage .formSubmit__message {
+  color: #707070;
+  font-weight: lighter;
+  font-size: 16px;
+}
+#singleCareerPage button[type='submit'] {
+  display: block;
+  margin: 0 auto;
+}
+#singleCareerPage .iti {
+  flex-grow: 1;
+}
+#singleCareerPage .iti__flag {
+  border-radius: 50%;
+  background-image: url("../external/telphone-international/build/img/flags.webp");
+}
+#singleCareerPage .form__box--phone {
+  display: flex;
+  flex-wrap: wrap;
+}
+#singleCareerPage .form__input--phone {
+  padding: 20px;
+  padding-left: 50px;
+  height: 100%;
+}
+#singleCareerPage .form__input--file + .message-required {
+  top: auto;
+  bottom: 0;
+  transform: translateX(50%);
+  right: 50%;
+  width: 90%;
+  text-align: center;
+}
+
+#faqPage header, #contactUsPage header {
+  width: 100%;
+  height: calc(50vh + 125px);
+  background-color: var(--dickson-light-blue);
+  background-image: url('../img/vector_contact.svg'), url('../img/vector_contact.svg');
+  background-size: 150px, 150px;
+  background-position: -50px calc(50% + (95px / 2)), calc(100% + 50px) calc(50% + (95px / 2));
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#faqPage .top__divider {
+  border: 0;
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  width: 100vw;
+  position: relative;
+  left: -15%;
+}
+#faqPage main, #productPage main {
+  padding-bottom: 0;
+}
+#faqPage .faqTab {
+  padding: 0;
+  max-width: 100%;
+}
+#faqPage .faqTab__menu {
+  max-width: 100%;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--dickson-light-grey);
+}
+#faqPage .faqTab__title {
+  flex-grow: 1;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: 'Gotham-bold';
+  border: 0;
+}
+#faqPage .faqTab__title.active {
+  color: var(--dickson-orange);
+}
+#faqPage .jq-tab-content {
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+#faqPage .faqContent__item {
+  color: #707070;
+  text-transform: capitalize;
+  word-break: break-word;
+  border-bottom: 1px solid #DDDDDD;
+  letter-spacing: 1px;
+}
+#faqPage .faqContent__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+#faqPage .faqContent__item[open] {
+  padding: 20px 10px 20px;
+  background-color: #f2f2f2;
+}
+#faqPage .faqContent__item[open] summary {
+  margin: -20px -10px 20px -10px;
+}
+#faqPage .faqContent__item summary {
+  color: #000;
+  background-color: #fff;
+  padding: 20px 0;
+}
+#faqPage .faqContent__item .bx {
+  transition: all 500ms;
+}
+#faqPage .faqContent__item[open] .bx {
+  transform: rotate(180deg);
+}
+#faqPage .top .row:last-child p:first-child {
+  font-family: 'Gotham-bold';
+  letter-spacing: 0.5px;
+}
+#faqPage .top .row:last-child p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#contactUsPage .loader {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+}
+#contactUsPage .loader:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+#contactUsPage .circular {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#contactUsPage .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@-webkit-keyframes color {
+  100%,
+  0% {
+    stroke: #d62d20;
+  }
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
+  }
+}
+@keyframes color {
+  100%,
+  0% {
+    stroke: #d62d20;
+  }
+  40% {
+    stroke: #0057e7;
+  }
+  66% {
+    stroke: #008744;
+  }
+  80%,
+  90% {
+    stroke: #ffa700;
+  }
+}
+#contactUsPage .showbox {
+  position: fixed;
+  top: 50%;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+}
+
+#contactUsPage .form__input {
+  font-family: 'Gotham-normal';
+}
+#contactUsPage div[class*='contact-'] .heading-text {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-family: 'Gotham-bold';
+}
+#contactUsPage .contact-info {
+  padding-top: 60px;
+}
+#contactUsPage .contact-info__company-name {
+  color: #5C5C5C;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#contactUsPage .contact-info__address {
+  color: #5C5C5C;
+  font-style: normal;
+}
+#contactUsPage .contact-info__direct {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 50px;
+}
+#contactUsPage .contact-info__link {
+  color: #5C5C5C;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#contactUsPage .contact-info__link img {
+  margin-right: 10px;
+}
+#contactUsPage .contact-info__img {
+  position: relative;
+}
+#contactUsPage .contact-info__img img {
+  max-width: 100%;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+}
+#contactUsPage .bg-accessories {
+  bottom: 0;
+  right: -15px;
+  transform: translateY(-130%);
+}
+#contactUsPage .form__box--no-label {
+  padding: 0;
+}
+#customerMaster #contactUsPage .form__box .input-required::after {
+  color: inherit;
+}
+
+#singleProductPage .slick-nav--right {
+  right: 10px;
+  /* transform: translateX(-100%); */
+}
+#singleProductPage .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: var(--dickson-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 45px;
+}
+#singleProductPage .slick-nav--left {
+  left: 10px;
+  /* transform: translateX(100%); */
+}
+#singleProductPage main {
+  padding: 25px 0;
+}
+#singleProductPage .singleProduct {
+  padding: 0 15px;
+  position: relative;
+}
+#singleProductPage .product-image__item {
+  border-radius: 20px;
+  margin: 0 8px;
+}
+#singleProductPage .singleProduct__subtitle {
+  color: rgba(17, 63, 89, 0.75);
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+#singleProductPage .singleProduct__title {
+  color: #113F59;
+  font-size: 30px;
+  font-family: 'Gotham-bold';
+  letter-spacing: 1.3px;
+  margin-bottom: 5px;
+}
+#singleProductPage .singleProduct__heading {
+  margin-bottom: 15px;
+  margin-top: 35px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #113F59;
+}
+#singleProductPage .singleProduct__text {
+  font-size: 16px;
+  color: #4f4f4f;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+}
+#singleProductPage .documentProtection .singleProduct__text {
+  color: #707070;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: proxima-nova, sans-serif;
+}
+#singleProductPage .documentProtection__header .singleProduct__text {
+  color: var(--dickson-blue);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: proxima-nova, sans-serif;
+  letter-spacing: 0.4px;
+  font-size: 18px;
+}
+#singleProductPage .singleProduct-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 10px;
+  width: 10px;
+  background-color: #2D9CDB;
+  border-radius: 50%;
+}
+#singleProductPage .singleProduct__document .singleProduct-list li::before {
+  content: none;
+}
+#singleProductPage .singleProduct-list__item {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#singleProductPage .singleProduct-list__item .btn-line {
+  border: 1.5px solid #EC9700;
+  border-radius: 5px;
+  height: 35px;
+  color: #EC9700;
+  padding: 0 10px;
+  text-align: center;
+}
+#singleProductPage .singleProduct-list__item .btn-line:hover {
+  border-color: #d68c07;
+  color: #d68c07;
+}
+#singleProductPage .singleProduct-list__item .btn-line:active {
+  background-color: #d68c07;
+  color: #fff;
+  border-color: #c27f08;
+}
+#singleProductPage .productRequest {
+  border-radius: 0px 0px 10px 10px;
+  margin-top: 60px;
+}
+#singleProductPage .productRequest__wrapper {
+  position: relative;
+}
+#singleProductPage .productRequest__header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 12px 20px 0 20px;
+  height: 90px;
+  background-image: url('../img/request_prod_bg.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#singleProductPage .productRequest__header .bg-accessories {
+  z-index: 1;
+  right: 0;
+  top: 0;
+  transform: translate(10px, -10px);
+}
+#singleProductPage .productRequest__heading {
+  font-size: 18px;
+  color: #113F59;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-left: 20px;
+}
+#singleProductPage .productRequest__form {
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 35px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+#singleProductPage .productRequest__link {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#singleProductPage .similiarProduct {
+  width: 100%;
+  padding-bottom: 60px;
+  margin: 0 0 50px;
+}
+#singleProductPage .similiarProduct .slick-arrow {
+  background-color: #fff;
+  color: var(--dickson-orange);
+  top: auto;
+  bottom: -10px;
+  transform: translateY(100%);
+}
+#singleProductPage .documentProtection {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  color: #707070;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+#singleProductPage .documentProtection__header {
+  color: var(--dickson-blue);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#singleProductPage .singleProduct__video {
+  max-width: 100%;
+  margin-top: 45px;
+  position: relative;
+}
+#singleProductPage .singleProduct__videoTitle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.26);
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Gotham-bold';
+  z-index: 1;
+  padding-left: 15px;
+}
+#singleProductPage .singleProduct__videoPlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url('../img/video_cover.webp');
+  color: #fff;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#singleProductPage .singleProduct__video video {
+  width: 100%;
+  object-fit: cover;
+}
+#singleProductPage .similiarProduct .slick-slide {
+  padding-bottom: 60px;
+  padding-left: 40px !important;
+}
+#singleProductPage #similiarProduct-container .heading-text {
+  margin: 20px 0;
+  font-size: 34px;
+}
+#singleProductPage .productRequest .form__input {
+  color: #3D3D3D;
+  font-size: 17px;
+  font-weight: 500;
+}
+#customerMaster #singleProductPage [class^='btn-'] {
+  padding: 0 32px;
+}
+#customerMaster #singleProductPage #modal-request-done .btn-primary {
+  padding: 0;
+  height: 54px;
+}
+
+#productPage main {
+  padding: 0;
+}
+#productPage #product_section {
+  padding-top: 60px;
+}
+#productPage .headerBg {
+  height: calc(100% - 25px);
+}
+#productPage .productHeader__btn {
+  justify-content: center;
+  margin-top: auto;
+}
+#productPage .productHeader__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#aboutPage header {
+  background-color: var(--dickson-light-blue);
+  background-image: url('../img/vector_contact.svg'), url('../img/vector_contact.svg');
+  background-position: left 75%, right 40%;
+  background-repeat: no-repeat;
+  background-size: 230px 185px;
+}
+#aboutPage .heading-text {
+  font-family: proxima-nova, sans-serif;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+#aboutPage .headerBg {
+  display: none;
+  background-image: none;
+}
+#aboutPage .aboutHeader__img {
+  width: 100%;
+}
+#aboutPage .aboutHeader__figure {
+  position: relative;
+  border: 1px solid transparent;
+  transform: translateY(25px);
+}
+#aboutPage .aboutHeader__caption {
+  background-color: #fff;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  padding: 20px 35px 20px 20px;
+}
+#aboutPage .aboutHeader__slogan:first-child {
+  position: relative;
+  padding-right: 25px;
+  font-weight: bold;
+  color: #7887A5;
+}
+#aboutPage .aboutHeader__slogan:first-child::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.5px;
+  width: 15px;
+  background-color: #7887A5;
+}
+#aboutPage .aboutHeader__slogan:last-child {
+  margin-top: 10px;
+  color: #113F59;
+  font-weight: bold;
+  font-family: 'Gotham-bold';
+}
+#aboutPage .aboutHeader__slogan {
+  letter-spacing: 0.3px;
+}
+#aboutPage main {
+  padding-top: 140px;
+}
+#aboutPage section:not(.aboutBelieve) {
+  padding-top: 90px;
+}
+#aboutPage .aboutBelieve .row .col-12:first-child {
+  color: #707070;
+  font-size: 17px;
+}
+#aboutPage .aboutBelieve__img {
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+}
+#aboutPage .aboutTeam .row .col-12:last-child {
+  margin-top: 40px;
+}
+#aboutPage .aboutTeam .row .col-12 {
+  text-align: center;
+  position: relative;
+}
+#aboutPage .aboutTeam__img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+#aboutPage .aboutTeam {
+  margin-top: -70px;
+}
+#aboutPage .aboutClient {
+  overflow: hidden;
+  margin-top: 90px;
+  padding: 110px 0 120px !important;
+  transform: skewY(2deg);
+  background-image: linear-gradient(127deg, rgba(236, 151, 0, 0.14) -16.82%, rgba(78, 125, 221, 0.14) 111.52%);
+}
+#aboutPage .aboutClient__vector {
+  position: absolute;
+  bottom: -60px;
+  left: -30px;
+}
+#aboutPage .aboutClient .container {
+  transform: skewY(-2deg);
+}
+#aboutPage .aboutClient .secondary-text {
+  color: #7887A5;
+}
+#aboutPage .aboutClient .slick-track {
+  display: flex;
+  align-items: center;
+}
+#aboutPage .aboutClientSlider .slick-next {
+  right: -10px;
+}
+#aboutPage .aboutClientSlider .slick-prev {
+  left: -10px;
+}
+#aboutPage .aboutTeam__imgVector {
+  display: none;
+}
+#aboutPage .aboutClientSlider__img {
+  padding: 0 30px;
+}
+#aboutPage footer {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 767px) {
+  #careerPage header {
+    height: auto;
+  }
+  #productPage header > .container {
+    overflow: visible;
+  }
+  #careerPage header > .container, #productPage header > .container {
+    align-items: flex-end;
+    justify-content: flex-start;
+    display: flex;
+    padding-bottom: 50px;
+    flex-direction: column;
+  }
+  #productPage header > .container {
+    margin-right: 0;
+  }
+  #productPage .productHeader__caption {
+    transform: translateY(0) translateX(-50px);
+    top: 10%;
+  }
+  #careerPage .careerHeader__caption {
+    left: 10%;
+  }
+  #careerPage .careerDescription__img {
+    max-height: 600px;
+    object-position: top;
+  }
+  #careerPage .careerHeader__btn {
+    margin: auto 0 0;
+  }
+  #careerPage main {
+    padding-top: 75px;
+  }
+  #careerPage .careerDescription__img img, #careerPage .team__img--tilted img:first-child {
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 100%);
+  }
+  #careerPage details div[class^='jobs__'] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #careerPage details div[class^='jobs__'] p:first-child {
+    font-size: 20px;
+  }
+  #careerPage details .jobs__title {
+    margin-bottom: 0;
+  }
+  #careerPage .jobs__detail ul {
+    margin-top: 30px;
+  }
+
+  #aboutPage .aboutHeader__slogan:first-child {
+    font-size: 18px;
+  }
+  #aboutPage .aboutHeader__slogan:last-child {
+    font-size: 20px;
+  }
+
+  #productPage .productHeader__img {
+    max-width: 70%;
+  }
+  #productPage .nav__list {
+    margin: 0;
+  }
+  #productPage .productHeader__caption {
+    left: 0;
+  }
+  #productPage header > .container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #customerMaster .nav__list {
+    margin: 0;
+  }
+  #landingPage header {
+    background-image: url('../img/landing_header.webp');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 80% 100%;
+    padding-top: 0 !important;
+  }
+  #landingPage header > .container {
+    position: relative;
+    max-width: none;
+    width: auto;
+    padding: 0;
+  }
+  #landingPage .landingHeader {
+    flex-direction: row;
+  }
+  #landingPage .header__info {
+    position: absolute;
+    left: 50%;
+    top: calc(45% - 95px);
+    transform: translateY(-50%);
+  }
+  #landingPage .header__img {
+    height: 600px;
+    padding: 0;
+    transform: translateX(-15px);
+    width: 50%;
+    max-width: none;
+  }
+  #landingPage .header__img + .bg-accessories {
+    left: 40%;
+    bottom: 23%;
+  }
+  #landingPage .header__arrow {
+    display: block;
+    right: calc((100% - 85%) / 2);
+    bottom: 30% !important;
+  }
+  #landingPage section:not(.product) .heading-text {
+    font-size: 35px;
+    letter-spacing: 1px;
+    max-width: 515px;
+  }
+  #landingPage nav {
+    position: relative;
+    background-color: transparent;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: none;
+  }
+  #landingPage .header__img {
+    transform: none;
+  }
+  #landingPage .getFree__info .secondary-text, #landingPage .getFree__info .heading-text, #landingPage .benefit__title, #landingPage .benefit__desc {
+    text-align: left;
+  }
+  #landingPage .header__info {
+    margin-top: 0;
+    width: 40%;
+    padding-left: 50px;
+  }
+  #landingPage .header__slogan {
+    font-size: 40px;
+  }
+  #landingPage .header__company-name {
+    position: relative;
+    right: 0;
+    padding-right: 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transform: none;
+    font-size: 18px;
+  }
+  #landingPage .header__company-name::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    background-color: #7887A5;
+    width: 20px;
+  }
+  #landingPage .product .heading-text {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #landingPage .product__slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #landingPage .product__slider .slick-dots li, #landingPage .product__slider .slick-dots li button {
+    height: auto;
+    padding: 0;
+    pointer-events: none;
+  }
+  #landingPage .product__slider .slick-dots li button:before {
+    content: '' !important;
+    border-radius: 15px;
+    height: 5px;
+    background-color: #8FA2C7;
+    width: 21px;
+  }
+  #landingPage .product__slider .slick-dots .slick-active button:before, #landingPage .product__slider .slick-dots .slick-active,
+  #landingPage .product__slider .slick-dots .slick-active button {
+    width: 40px;
+  }
+  #landingPage .product__slider .slick-slide {
+    padding-bottom: 18px;
+  }
+  #landingPage .getFree__info h1 {
+    position: absolute;
+    width: 100%;
+    transform: translateX(15px);
+  }
+  #landingPage .getFree__info {
+    padding-left: 0;
+  }
+  #landingPage .getFree_desc {
+    padding-left: 60px;
+  }
+  #landingPage .getFree__info .secondary-text::after {
+    top: 50%;
+    bottom: auto;
+    left: 0;
+    transform: translateX(calc(100% + 50px)) translateY(-50%);
+  }
+  #landingPage .getFree__btn {
+    margin: auto 0;
+  }
+  #landingPage .getFree figure {
+    position: relative;
+    box-shadow: -2px 8px 20px rgba(77, 77, 77, 0.5);
+    border-radius: 20px;
+  }
+  #landingPage .getFree .bg-accessories {
+    bottom: 0;
+    transform: translateY(45%) translateX(-30%);
+    z-index: -1;
+  }
+  #landingPage .benefit {
+    padding-top: 200px;
+  }
+  #landingPage .benefit .row {
+    margin-top: 5.5rem;
+  }
+  #landingPage .benefit .row .col-12:first-child {
+    padding-left: 0;
+  }
+  #landingPage .benefit .row .col-12:last-child {
+    padding-right: 0;
+  }
+  #landingPage .benefit .row .col-12:not(:first-child) {
+    margin-top: 0;
+    padding: 0 30px;
+  }
+  #landingPage .benefit .col-12:nth-child(2) .benefit__img {
+    transform: translateX(-8px);
+  }
+  #landingPage .benefit .col-12:nth-last-child(2) .benefit__img {
+    transform: translateX(9px);
+  }
+  #landingPage .benefit .col-12:last-child .benefit__img {
+    transform: translateY(12px);
+  }
+
+  #careerPage .careerHeader__caption, #productPage .productHeader__caption {
+    max-width: 550px;
+    z-index: 1;
+    padding: 40px 30px;
+    align-items: flex-start;
+    height: 380px;
+    justify-content: flex-start;
+  }
+  #careerPage .careerHeader__caption {
+    max-width: 450px;
+    padding: 30px;
+  }
+  #careerPage .careerDescription__value {
+    flex-direction: row;
+  }
+  #careerPage .careerHeader__caption .secondary-text, #productPage .productHeader__caption .secondary-text {
+    display: inline-block;
+  }
+  #careerPage .careerDescription__img img {
+    max-height: 100%;
+  }
+  #careerPage .careerDescription__shadow {
+    box-shadow: 0 10px 14px -14px rgba(0, 0, 0, 0.5);
+    display: block !important;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+  }
+  #careerPage .careerHeader__img, #productPage .productHeader__img {
+    max-height: 100%;
+    width: 70%;
+  }
+  #careerPage .jobs details > summary {
+    flex-direction: row;
+    align-items: center;
+  }
+  #careerPage .jobs .jobs__address {
+    margin-left: 20px;
+  }
+  #careerPage details summary small {
+    margin-top: 0;
+    margin-left: auto;
+  }
+  #careerPage main {
+    padding-top: 0px;
+  }
+  #careerPage section .secondary-text::after {
+    left: 100%;
+    top: 50%;
+    transform: translate(10px, -50%);
+  }
+  #careerPage section .row:last-child .secondary-text::after {
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+  }
+  #careerPage section .heading-text {
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 10px 0;
+  }
+  #careerPage section.jobs .row:last-child .heading-text {
+    text-align: center;
+    margin: 30px 0;
+  }
+  #careerPage .heading-text
+  #careerPage main .careerDescription__img {
+    padding-right: 40px;
+  }
+  #careerPage main .careerDescription__value figcaption {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #careerPage .careerDescription__img {
+    margin-bottom: 0;
+  }
+  #careerPage .careerDescription__img + .bg-accessories {
+    bottom: 0%;
+    left: 0;
+    transform: translateY(-40%) translateX(-25%);
+  }
+  #careerPage .careerDescription__img img, #careerPage .team__img--tilted img:first-child {
+    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+  }
+  #careerPage .team__img {
+    padding: 0 30px;
+  }
+  #careerPage .team__img img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  #careerPage .team__img .bg-accessories {
+    display: block;
+    right: -10px;
+    bottom: -30px;
+  }
+  #careerPage .team__img--tilted img {
+    width: calc(100% - 20px);
+    object-fit: cover;
+  }
+
+  #singleCareerPage .headerCareer__location {
+    color: #7887A5;
+    font-size: 18px;
+    font-style: normal;
+  }
+  #singleCareerPage .form__box--phone {
+    padding: 0 10px 0 0;
+  }
+  #singleCareerPage .iti__flag-container {
+    z-index: 1;
+    transform: translateX(-100%);
+  }
+  #singleCareerPage .iti__selected-flag {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #singleCareerPage .form__input--phone {
+    padding: 20px !important;
+  }
+  #singleCareerPage .form__headingText {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #singleCareerPage .formSubmit__heading {
+    margin-bottom: 0;
+  }
+
+  #customerMaster #singleCareerPage .form__label--phone::after {
+    top: 7px;
+    right: 10px;
+    transform: translateY(0);
+  }
+
+  #contactUsPage .contact-info__direct {
+    flex-direction: row;
+  }
+  #contactUsPage .contact-info__link {
+    margin-bottom: 0;
+  }
+  #contactUsPage .contact-info__link:last-child {
+    margin-left: 15px;
+  }
+  #contactUsPage .btn-primary {
+    padding: 0 30px;
+  }
+  #contactUsPage div[class*='contact-'] .heading-text {
+    text-align: left;
+    font-size: 23px;
+    letter-spacing: 1px;
+  }
+  #contactUsPage .contact-info {
+    padding-top: 0;
+  }
+  #contactUsPage .form__input {
+    color: #39558D;
+  }
+  #contactUsPage .bg-accessories {
+    transform: translate(-10%, 20%);
+  }
+
+  #aboutPage .aboutTeam__img--modified {
+    clip-path: polygon(0 0, 100% 13%, 100% 100%, 0% 100%);
+  }
+  #aboutPage .aboutTeam__imgVector {
+    position: absolute;
+    right: -50px;
+    z-index: -1;
+    height: 180px;
+    display: inline-block;
+    bottom: -20px;
+  }
+  #aboutPage .aboutHeader__slogan:last-child {
+    font-size: 32px;
+  }
+  #aboutPage .aboutTeam .col-12:first-child {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+  #aboutPage .aboutTeam__img {
+    width: 100%;
+  }
+
+  #singleProductPage nav {
+    margin-bottom: 35px;
+  }
+  #singleProductPage .product-image__item {
+    height: 460px;
+    object-position: center;
+    object-fit: cover;
+  }
+  #singleProductPage .container > .row {
+    position: relative;
+    justify-content: space-between;
+  }
+  #singleProductPage .singleProduct {
+    width: 60%;
+  }
+  #singleProductPage .singleProduct__document li:first-child {
+    border-top: 1px solid #DCDCDC;
+  }
+  #singleProductPage .singleProduct__document li {
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #DCDCDC;
+    display: flex;
+  }
+  #singleProductPage .productRequest {
+    max-width: 40%;
+    margin-top: 0;
+    position: sticky;
+    transform: translateY(calc(-20px - 90px));
+    z-index: 1;
+    top: 95px;
+  }
+  #singleProductPage .similiarProduct .slick-arrow {
+    top: 50%;
+    transform: translateY(calc(-50% - 60px));
+    bottom: auto;
+  }
+  #singleProductPage .similiarProduct .slide-prev {
+    left: -5px !important;
+  }
+  #singleProductPage .similiarProduct .slide-next {
+    right: -25px !important;
+  }
+  #singleProductPage main {
+    padding-bottom: 0;
+  }
+  #singleProductPage .similiarProduct {
+    margin: 0 0 35px;
+    padding-bottom: 0;
+  }
+
+  #aboutPage header {
+    background-color: initial;
+    position: relative;
+    background-position: 23% 85%, 88% 45%;
+  }
+  #aboutPage header > .container {
+    display: flex;
+    overflow: visible;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: space-between;
+  }
+  #aboutPage .aboutBelieve .heading-text {
+    margin-top: 5px;
+  }
+  #aboutPage .aboutHeader__figure {
+    display: flex;
+    max-height: 500px;
+    width: 90%;
+    margin-left: auto;
+    justify-content: flex-end;
+    transform: translateY(50px) translateX(80px);
+  }
+  #aboutPage .aboutHeader__img {
+    object-fit: cover;
+  }
+  #aboutPage .headerBg {
+    bottom: auto;
+    display: block;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 85%;
+  }
+  #aboutPage .aboutBelieve h1 {
+    width: 50%;
+  }
+  #aboutPage .aboutBelieve .col-md-4 {
+    background-image: url('../img/vector_contact.svg');
+    background-position: right 20px bottom 25px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    transform: translateY(-155px);
+  }
+  #aboutPage .secondary-text::after {
+    bottom: auto;
+    top: 50%;
+    left: auto;
+    right: 0;
+    transform: translateX(calc(100% + 15px)) translateY(-50%);
+  }
+  #aboutPage .aboutTeam .row .col-12:last-child {
+    margin-top: 0;
+  }
+  #aboutPage .aboutClientSlider {
+    margin-top: 50px;
+  }
+  #aboutPage .aboutClientSlider__img {
+    object-fit: scale-down;
+  }
+
+  #faqPage .top .heading-text {
+    margin: 15px 0;
+  }
+  #faqPage .faqTab__menu {
+    border-bottom: 0;
+  }
+
+  #productPage header {
+    height: calc(70vh + 95px);
+  }
+  #productPage .headerBg {
+    background-position: 20% 90%;
+  }
+  #productPage .productHeader__img {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    height: 105%;
+    max-height: none;
+  }
+  #productPage .heading-text {
+    margin: 20px 0;
+  }
+
+  #faqPage .faqTab__title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #landingPage .header__img + .bg-accessories {
+    transform: translateX(-70%) translateY(30%);
+  }
+  #landingPage .header__img {
+    width: 40%;
+  }
+  #landingPage .header__info {
+    top: calc(50% - 95px);
+    max-width: 500px;
+  }
+  #landingPage .header__slogan {
+    font-size: 58px;
+  }
+  #landingPage .product .heading-text {
+    width: 40%;
+  }
+  #landingPage main .row .slide-arrow {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 45px;
+    border-radius: 50%;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+  }
+  #landingPage .getFree .heading-text {
+    margin: 25px 0 20px;
+  }
+  #landingPage main .row .slide-prev {
+    left: auto !important;
+    right: -30px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #landingPage main .row .slide-prev.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  #landingPage main .row .slide-next.hide, #landingPage main .row .slide-prev.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  #landingPage main .row .slide-next {
+    left: -40px !important;
+    right: auto !important;
+  }
+
+  #aboutPage .aboutClientSlider {
+    margin-top: 100px;
+  }
+  #aboutPage .aboutClientSlider__img {
+    max-height: 90px;
+    padding: 0 45px;
+  }
+
+  #careerPage .careerHeader__caption {
+    top: 45%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #singleCareerPage .iti__flag {
+    background-image: url("../external/telphone-international/build/img/flags.webp");
+  }
+}
